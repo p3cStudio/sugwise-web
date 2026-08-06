@@ -1,0 +1,111 @@
+/* Evoly — design tokens (from the Evoly design system) + base reset. */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+
+:root {
+  /* ---- Brand ---- */
+  --evoly-pink: #F0327A;
+  --evoly-orange: #FF7A45;
+  --evoly-magenta: #E0299A;
+  --evoly-pink-600: #D81E67;
+
+  --gradient-brand: linear-gradient(90deg, #F0327A 0%, #FF7A45 100%);
+  --gradient-brand-diagonal: linear-gradient(135deg, #F0327A 0%, #FF7A45 100%);
+  --gradient-splash: linear-gradient(to top right, #F25288 0%, #F56B97 34%, #F88AA5 67%, #FBB29D 100%);
+  --gradient-tint: linear-gradient(120deg, #FFF0F3 0%, #FFF3EC 100%);
+
+  /* ---- Surfaces ---- */
+  --surface-app: #FBF4F3;
+  --surface-card: #FFFFFF;
+  --surface-tint: #FDE9EC;
+  --surface-tint-warm: #FFF2EA;
+  --icon-badge: #FCE3E8;
+  --pill-bg: #FFE7EE;
+
+  /* ---- Text ---- */
+  --text-heading: #2A2140;
+  --text-strong: #141414;
+  --text-secondary: #6B6672;
+  --text-muted: #9A949E;
+  --text-on-brand: #FFFFFF;
+
+  /* ---- Lines ---- */
+  --border-soft: #F1E7E8;
+  --divider: #F2ECEC;
+
+  /* ---- Semantic: sugar classification ---- */
+  --sugar-good: #2FBE77;
+  --sugar-good-bg: #E4F7EE;
+  --sugar-moderate: #F5A623;
+  --sugar-moderate-bg: #FDF0DA;
+  --sugar-avoid: #F0327A;
+  --sugar-avoid-bg: #FDE4EC;
+
+  /* ---- Status ---- */
+  --success: #2FBE77;
+  --warning: #F5A623;
+  --danger: #F0466B;
+  --streak: #FF7A45;
+
+  /* ---- Spacing ---- */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-12: 12px;
+  --space-md: 16px;
+  --space-20: 20px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-40: 40px;
+  --space-xxl: 48px;
+  --space-64: 64px;
+  --screen-gutter: 24px;
+  --card-padding: 16px;
+  --stack-gap: 12px;
+
+  /* ---- Radius ---- */
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-2xl: 28px;
+  --radius-pill: 999px;
+  --radius-badge: 999px;
+
+  /* ---- Elevation ---- */
+  --shadow-card: 0 4px 16px rgba(20, 20, 20, 0.05), 0 1px 3px rgba(20, 20, 20, 0.04);
+  --shadow-card-soft: 0 6px 20px rgba(240, 50, 122, 0.06);
+  --shadow-button: 0 8px 12px rgba(255, 122, 69, 0.35);
+  --shadow-badge: 0 2px 8px rgba(240, 50, 122, 0.10);
+  --shadow-modal: 0 20px 48px rgba(42, 33, 64, 0.18);
+
+  /* ---- Typography ---- */
+  --font-display: "Baloo 2", "Avenir Next Rounded", system-ui, sans-serif;
+  --font-body: "Nunito", "Avenir Next", system-ui, -apple-system, sans-serif;
+  --text-wordmark: 44px;
+  --text-display: 34px;
+  --text-title: 28px;
+  --text-stat: 40px;
+  --text-h3: 20px;
+  --text-lg: 18px;
+  --text-body-size: 16px;
+  --text-sm: 15px;
+  --text-xs: 13px;
+  --text-cta: 17px;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+  --weight-black: 900;
+  --leading-tight: 1.12;
+  --leading-snug: 1.25;
+  --leading-normal: 1.4;
+  --leading-relaxed: 1.5;
+  --tracking-wordmark: 1.5px;
+  --tracking-normal: 0;
+  --tracking-tight: -0.3px;
+}
+
+body { margin: 0; }
+*, *::before, *::after { box-sizing: border-box; }
+a { color: inherit; text-decoration: none; }
