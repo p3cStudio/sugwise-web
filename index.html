@@ -19,7 +19,7 @@
     <!-- NAV -->
     <header
       style="position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(251,244,243,.82);border-bottom:1px solid var(--divider)">
-      <div
+      <div class="container"
         style="max-width:1120px;margin:0 auto;padding:16px 32px;display:flex;align-items:center;justify-content:space-between">
         <div style="display:flex;align-items:center;gap:11px">
           <img src="assets/app-icon.png"
@@ -27,10 +27,10 @@
             alt="Evoly" />
           <span style="font:600 24px/1 var(--font-display);letter-spacing:.5px;color:var(--text-heading)">Evoly</span>
         </div>
-        <nav style="display:flex;align-items:center;gap:30px">
-          <a href="#features" style="font:700 15px var(--font-body);color:var(--text-secondary)">Fonctionnalités</a>
-          <a href="#how" style="font:700 15px var(--font-body);color:var(--text-secondary)">Comment ça marche</a>
-          <a href="#avis" style="font:700 15px var(--font-body);color:var(--text-secondary)">Avis</a>
+        <nav class="nav" style="display:flex;align-items:center;gap:30px">
+          <a href="#features" class="nav-link" style="font:700 15px var(--font-body);color:var(--text-secondary)">Fonctionnalités</a>
+          <a href="#how" class="nav-link" style="font:700 15px var(--font-body);color:var(--text-secondary)">Comment ça marche</a>
+          <a href="#avis" class="nav-link" style="font:700 15px var(--font-body);color:var(--text-secondary)">Avis</a>
           <a href="#download"
             style="display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 22px;border-radius:999px;background:var(--gradient-brand);color:#fff;font:700 15px var(--font-body);box-shadow:0 8px 12px rgba(255,122,69,.35)">Télécharger</a>
         </nav>
@@ -38,21 +38,21 @@
     </header>
 
     <!-- HERO -->
-    <section style="position:relative;overflow:hidden;background:var(--gradient-splash)">
+    <section id="hero" style="position:relative;overflow:hidden;background:var(--gradient-splash)">
       <div
         style="position:absolute;top:-90px;right:-70px;width:280px;height:280px;border-radius:999px;background:rgba(255,255,255,.09)">
       </div>
       <div
         style="position:absolute;bottom:-120px;left:-90px;width:320px;height:320px;border-radius:999px;background:rgba(255,255,255,.07)">
       </div>
-      <div
+      <div class="container hero-grid"
         style="max-width:1120px;margin:0 auto;padding:84px 32px 90px;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;position:relative;z-index:1">
         <div>
           <div
             style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:8px 16px;font:800 13px var(--font-body);letter-spacing:.4px;color:#fff;margin-bottom:22px">
             <i data-lucide="sparkles" style="width:15px;height:15px"></i> SANS RÉGIME · SANS CULPABILISER
           </div>
-          <h1 style="margin:0 0 20px;font:800 60px/1.04 var(--font-display);color:#fff;text-wrap:balance">Moins de
+          <h1 class="hero-title" style="margin:0 0 20px;font:800 60px/1.04 var(--font-display);color:#fff;text-wrap:balance">Moins de
             sucre,<br><span style="font-style:italic;font-weight:600">plus de toi.</span></h1>
           <p style="margin:0 0 32px;max-width:480px;font:500 20px/1.5 var(--font-body);color:rgba(255,255,255,.92)">
             Evoly calcule ton Sugar Budget quotidien et t'accompagne pour rester dans les recommandations de l'OMS — un
@@ -97,7 +97,7 @@
 
         <!-- Phone mockup — écran Accueil -->
         <div style="display:flex;justify-content:center">
-          <div
+          <div class="hero-phone"
             style="width:326px;height:706px;background:#0e0e12;border-radius:46px;padding:11px;box-shadow:0 40px 80px rgba(42,33,64,.4)">
             <img src="assets/iphone-hero.png" alt="Aperçu de l'app Evoly"
               style="width:100%;height:100%;border-radius:36px;object-fit:cover;display:block" />
@@ -108,7 +108,7 @@
 
     <!-- TRUST BAR -->
     <section style="background:var(--surface-card);border-bottom:1px solid var(--divider)">
-      <div
+      <div class="container"
         style="max-width:1120px;margin:0 auto;padding:30px 32px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px">
         <div style="display:flex;align-items:center;gap:12px"><i data-lucide="globe"
             style="width:26px;height:26px;color:var(--evoly-pink)"></i><span
@@ -130,7 +130,7 @@
     </section>
 
     <!-- FEATURES -->
-    <section id="features" style="max-width:1120px;margin:0 auto;padding:96px 32px 40px">
+    <section id="features" class="container" style="max-width:1120px;margin:0 auto;padding:96px 32px 40px">
       <div style="text-align:center;max-width:640px;margin:0 auto 56px">
         <div style="font:800 14px var(--font-body);letter-spacing:.6px;color:var(--evoly-pink);margin-bottom:12px">TOUT
           CE QU'IL FAUT POUR AVANCER</div>
@@ -141,7 +141,7 @@
         <p style="margin:0;font:500 18px/1.5 var(--font-body);color:var(--text-secondary)">Des outils simples pour mieux
           comprendre ta consommation de sucre, jour après jour.</p>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+      <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
         <div style="background:var(--surface-card);border-radius:24px;box-shadow:var(--shadow-card);padding:28px">
           <div
             style="width:58px;height:58px;border-radius:16px;background:var(--icon-badge);display:flex;align-items:center;justify-content:center;margin-bottom:18px">
@@ -200,14 +200,14 @@
     </section>
 
     <!-- HOW IT WORKS -->
-    <section id="how" style="max-width:1120px;margin:0 auto;padding:70px 32px 40px">
+    <section id="how" class="container" style="max-width:1120px;margin:0 auto;padding:70px 32px 40px">
       <div style="text-align:center;max-width:640px;margin:0 auto 56px">
         <div style="font:800 14px var(--font-body);letter-spacing:.6px;color:var(--evoly-pink);margin-bottom:12px">
           COMMENT ÇA MARCHE</div>
         <h2 style="margin:0;font:800 44px/1.1 var(--font-display);color:var(--text-heading)">Trois étapes, zéro prise de
           tête</h2>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+      <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
         <div style="text-align:center;padding:0 12px">
           <div
             style="width:72px;height:72px;margin:0 auto 20px;border-radius:20px;background:var(--gradient-tint);display:flex;align-items:center;justify-content:center;position:relative">
@@ -248,8 +248,8 @@
     </section>
 
     <!-- STATS -->
-    <section style="max-width:1120px;margin:70px auto 0;padding:0 32px">
-      <div
+    <section class="container" style="max-width:1120px;margin:70px auto 0;padding:0 32px">
+      <div class="grid-3"
         style="background:var(--gradient-splash);border-radius:32px;padding:56px 40px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center;position:relative;overflow:hidden">
         <div
           style="position:absolute;top:-60px;right:-40px;width:180px;height:180px;border-radius:999px;background:rgba(255,255,255,.09)">
@@ -272,14 +272,14 @@
     </section>
 
     <!-- TESTIMONIALS -->
-    <section id="avis" style="max-width:1120px;margin:0 auto;padding:96px 32px 40px">
+    <section id="avis" class="container" style="max-width:1120px;margin:0 auto;padding:96px 32px 40px">
       <div style="text-align:center;max-width:640px;margin:0 auto 56px">
         <div style="font:800 14px var(--font-body);letter-spacing:.6px;color:var(--evoly-pink);margin-bottom:12px">ILS
           ONT REPRIS LE CONTRÔLE</div>
         <h2 style="margin:0;font:800 44px/1.1 var(--font-display);color:var(--text-heading)">Ce qu'en pensent nos
           membres</h2>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
+      <div class="grid-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
         <div style="background:var(--surface-card);border-radius:24px;box-shadow:var(--shadow-card);padding:26px">
           <div style="display:flex;gap:3px;margin-bottom:14px"><i data-lucide="star" fill="#F5A623"
               style="width:18px;height:18px;color:#F5A623"></i><i data-lucide="star" fill="#F5A623"
@@ -335,7 +335,7 @@
     </section>
 
     <!-- CTA / DOWNLOAD -->
-    <section id="download" style="max-width:1120px;margin:70px auto 0;padding:0 32px 96px">
+    <section id="download" class="container" style="max-width:1120px;margin:70px auto 0;padding:0 32px 96px">
       <div
         style="background:var(--surface-card);border-radius:32px;box-shadow:var(--shadow-card);padding:64px 40px;text-align:center;position:relative;overflow:hidden">
         <img src="assets/app-icon.png"
@@ -365,7 +365,7 @@
 
     <!-- FOOTER -->
     <footer style="background:var(--surface-card);border-top:1px solid var(--divider)">
-      <div
+      <div class="container"
         style="max-width:1120px;margin:0 auto;padding:40px 32px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px">
         <div style="display:flex;align-items:center;gap:11px"><img src="assets/app-icon.png"
             style="width:34px;height:34px;border-radius:10px;object-fit:cover" alt="Evoly" /><span
